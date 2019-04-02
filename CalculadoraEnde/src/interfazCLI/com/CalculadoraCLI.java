@@ -35,7 +35,7 @@ private static void LanzarMenu() {
  * Realiza la suma entre dos números
  * @author Rodrigo
  */
-private static double Sumar(double n,double m) {
+public static double Sumar(double n,double m) {
 	System.out.println("Yo sumo dos operadores");
 	return n+m;
 
@@ -46,7 +46,7 @@ private static double Sumar(double n,double m) {
  * Lanza excepcion cuando el divisor es 0
  * @author Rodrigo
  */
-private static double Dividir(double n,double m) {
+public static double Dividir(double n,double m) {
 	System.out.println("Yo divido dos operadores");
 	try {
 		if(m==0)
@@ -66,11 +66,15 @@ private static double Dividir(double n,double m) {
  *
  * @author Rodrigo
  */
-private static double Logaritmo(double n,double m) {
+public static double Logaritmo(double n,double m) {
+	
+	System.out.println("Yo hago el logaritmo de dos operadores");
 	
 	return Math.log(n) / Math.log(m);
 	
 }
+
+
 
 
 
