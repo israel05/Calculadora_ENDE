@@ -2,14 +2,9 @@ package interfazCLI.com;
 
 public class CalculadoraCLI {
 	
-	private double n;
-
-	private double m;
 	
-	Calculadora(double x,double y){
-		this.n=n;
-		this.m=m;
-	}
+	
+	
 /**
  * Es el programa principal de linea de comandos
  * nuestra labor será extraer los métodos que haga falta y 
@@ -31,14 +26,14 @@ public class CalculadoraCLI {
 	 */
 private static void LanzarMenu() {
 	System.out.println("Bienvenido a la calculadora");
-	Sumar(); //debes borrarme
+
 }
 
 /**
  * Realiza la suma entre dos números
  * @author Rodrigo
  */
-private static int Sumar() {
+private static int Sumar(int n,int m) {
 	System.out.println("Yo sumo dos operadores");
 	return n+m;
 
@@ -48,11 +43,11 @@ private static int Sumar() {
  * Realiza la división entre dos números
  * @author Rodrigo
  */
-private static int Dividir() {
+private static int Dividir(int n,int m) {
 	System.out.println("Yo divido dos operadores");
 	try {
 		if(m==0)
-			
+			throws 
 		return n/m;	
 	}catch() {
 		System.out.println("Dividendo igual a 0");
