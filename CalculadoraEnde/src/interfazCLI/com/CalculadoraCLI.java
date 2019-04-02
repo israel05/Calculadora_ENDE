@@ -26,33 +26,50 @@ public class CalculadoraCLI {
 	 */
 private static void LanzarMenu() {
 	System.out.println("Bienvenido a la calculadora");
+	
 
 }
+
 
 /**
  * Realiza la suma entre dos números
  * @author Rodrigo
  */
-private static int Sumar(int n,int m) {
+private static double Sumar(double n,double m) {
 	System.out.println("Yo sumo dos operadores");
 	return n+m;
 
 }
 
 /**
- * Realiza la división entre dos números
+ * Realiza la división entre dos números.
+ * Lanza excepcion cuando el divisor es 0
  * @author Rodrigo
  */
-private static int Dividir(int n,int m) {
+private static double Dividir(double n,double m) {
 	System.out.println("Yo divido dos operadores");
 	try {
 		if(m==0)
-			throws 
+			throw new ErrorDivision0("Division por 0.");
 		return n/m;	
-	}catch() {
-		System.out.println("Dividendo igual a 0");
+	}catch(ErrorDivision0 e) {
+		System.err.println(e.getMessage());
+		return -1;
 	}
+	
+	
 
+}
+
+/**
+ * Realiza el logaritmo de n con base m
+ *
+ * @author Rodrigo
+ */
+private static double Logaritmo(double n,double m) {
+	
+	return Math.log(n) / Math.log(m);
+	
 }
 
 
