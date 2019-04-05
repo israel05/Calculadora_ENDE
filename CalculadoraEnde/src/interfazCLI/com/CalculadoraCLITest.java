@@ -53,9 +53,16 @@ class CalculadoraCLITest {
 	 */
 	@Test
 	void testDividir1() {
-		double solucion = CalculadoraCLI.Dividir(2.0,1.0);
+		double solucion;
+		try {
+			solucion = CalculadoraCLI.Dividir(2.0,1.0);
+			assertEquals(3.0, solucion);
+		} catch (ErrorDivision0 e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		assertEquals(3.0, solucion);
+		
 	}
 	
 	
@@ -67,7 +74,12 @@ class CalculadoraCLITest {
 	@Test
 	void testDividir2() {
 		
-		assertEquals("Division por 0.", CalculadoraCLI.Dividir(3.0,0));
+		try {
+			assertEquals("Division por 0.", CalculadoraCLI.Dividir(3.0,0));
+		} catch (ErrorDivision0 e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 
