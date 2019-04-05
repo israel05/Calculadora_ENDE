@@ -97,6 +97,7 @@ public class Calculadora {
                 	resul=resul+resto;
                 	
                 }
+                
 			}
 			return resul; 
 		}
