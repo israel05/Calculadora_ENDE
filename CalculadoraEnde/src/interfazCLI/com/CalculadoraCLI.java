@@ -46,19 +46,14 @@ public static double Sumar(double n,double m) {
  * Lanza excepcion cuando el divisor es 0
  * @author Rodrigo
  */
-public static double Dividir(double n,double m) {
+public static double Dividir(double n,double m) throws ErrorDivision0{
 	System.out.println("Yo divido dos operadores");
-	try {
+	
 		if(m==0)
 			throw new ErrorDivision0("Division por 0.");
 		return n/m;	
-	}catch(ErrorDivision0 e) {
-		System.err.println(e.getMessage());
-		return -1;
-	}
-	
-	
 
+	
 }
 
 /**
