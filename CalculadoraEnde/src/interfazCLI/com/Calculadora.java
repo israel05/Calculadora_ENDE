@@ -88,12 +88,24 @@ public class Calculadora {
 	//BINARIO
 	public float binario() {
 		float resul=0;
-		
+		float resto=0;
 		if(num1 > 0) {
+			while (num1 > 0) {
+                if (num1 % 2 == 0) {
+                	
+                	resto=num1 % 2;
+                	resul=resul+resto;
+                	
+                }
+			}
+			return resul; 
+		}
+		else
+		{
+			return -1;
 			
 		}
 		
-		return resul;
 	}
 	
 	
