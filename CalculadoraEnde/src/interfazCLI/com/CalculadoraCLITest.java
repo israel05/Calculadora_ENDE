@@ -2,6 +2,7 @@ package interfazCLI.com;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -52,7 +53,7 @@ class CalculadoraCLITest {
 	 */
 	@Test
 	void testDividir1() {
-		double solucion = CalculadoraCLI.Sumar(2.0,1.0);
+		double solucion = CalculadoraCLI.Dividir(2.0,1.0);
 		
 		assertEquals(3.0, solucion);
 	}
@@ -65,9 +66,9 @@ class CalculadoraCLITest {
 	 */
 	@Test
 	void testDividir2() {
-		double solucion = CalculadoraCLI.Sumar(3.0,1.0);
 		
-		assertEquals(3.0, solucion);
+		assertEquals("Division por 0.", CalculadoraCLI.Dividir(3.0,0));
 	}
+	
 
 }
