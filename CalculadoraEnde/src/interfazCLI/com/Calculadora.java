@@ -64,13 +64,48 @@ public class Calculadora {
 		float resul=0;
 		
 		for (int i=0;i<num2;i++){
-			resul=num1+resul;
-			
+			resul=num1+resul;	
 		}
 
 		return resul;
 	}
 	
+
+	//RAIZ CUADRADA
+	public float raiz_cuadrada() {
+		float resul=0;
+		
+		return resul = (float) Math.sqrt(num1);
+	}
+	
+	//LOGARITMO
+	public float logaritmo() {
+		float resul=0;
+		
+		return resul = (float) Math.log(num1);
+	}
+	
+	//BINARIO
+	public float binario() {
+		float resul=0;
+		
+		if(num1 > 0) {
+			
+		}
+		
+		return resul;
+	}
+	
+	
+	//VALOR ABSOLUTO
+	public float valor_absoluto() {
+		
+		float resul=0;
+		
+		float num1_abs = Math.abs(num1);
+		
+		return num1_abs;
+	}
 	
 	
 	
