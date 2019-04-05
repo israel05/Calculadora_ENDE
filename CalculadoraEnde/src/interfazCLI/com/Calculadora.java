@@ -11,6 +11,6 @@ package interfazCLI.com;
  * @author israel
  *
  */
-public class Calculadora_Potencias {
+public class Calculadora {
 
 }
