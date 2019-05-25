@@ -22,11 +22,7 @@ public class HolaMundo {
 			while (line != null) {
 				System.out.print("Te saludo en otro idioma: ");
 				System.out.print(line);
-				System.out.println(" XD ");
-
-				System.out.println(" XDXDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD ");
-			System.out.println(" XDXDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD2224444 ");
-				
+				System.out.println(" XD ");				
 				line = reader.readLine();
 			}
 			reader.close();
