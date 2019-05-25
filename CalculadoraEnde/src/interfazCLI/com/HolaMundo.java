@@ -23,6 +23,8 @@ public class HolaMundo {
 				System.out.print("Te saludo en otro idioma: ");
 				System.out.print(line);
 				System.out.println(" XD ");
+
+				System.out.println(" XDXDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD ");
 				
 				line = reader.readLine();
 			}
